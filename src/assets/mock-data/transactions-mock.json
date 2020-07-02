@@ -1,0 +1,22 @@
+{
+  "transactions": [
+    {
+      "description": "this is for coffee",
+      "amount": "$12",
+      "type": "expense",
+      "date": "today"
+    },
+    {
+      "description": "this is for salary",
+      "amount": "$1200",
+      "type": "income",
+      "date": "yesterday"
+    },
+    {
+      "description": "this is for book",
+      "amount": "$12",
+      "type": "expense",
+      "date": "8/12"
+    }
+  ]
+}
