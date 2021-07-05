@@ -1,11 +1,15 @@
 export class TransactionBill {
   description?: string;
-  amount?: number;
+  amount?: string;
   type?: string;
-  constructor(desc: string, amount: number, type: string) {
+  date?: string;
+
+  constructor(desc?: string, amount?: string, type?: string, date?: string) {
     this.description = desc;
     this.amount = amount;
     this.type = type;
+    this.date = date;
+
   }
 }
 

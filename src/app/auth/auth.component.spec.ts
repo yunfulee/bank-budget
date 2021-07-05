@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IncomeExpenseDailyComponent } from './income-expense-daily.component';
+import { AuthComponent } from './auth.component';
 
-describe('IncomeExpenseDailyComponent', () => {
-  let component: IncomeExpenseDailyComponent;
-  let fixture: ComponentFixture<IncomeExpenseDailyComponent>;
+describe('AuthComponent', () => {
+  let component: AuthComponent;
+  let fixture: ComponentFixture<AuthComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ IncomeExpenseDailyComponent ]
+      declarations: [ AuthComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(IncomeExpenseDailyComponent);
+    fixture = TestBed.createComponent(AuthComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

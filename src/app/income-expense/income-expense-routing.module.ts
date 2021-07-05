@@ -6,19 +6,17 @@ import { MyAccountBookComponent } from './my-account-book/my-account-book.compon
 import { RevenueAnalysisComponent } from './revenue-analysis/revenue-analysis.component';
 import { MonthlyBillComponent } from './monthly-bill/monthly-bill.component';
 import { TransactionSearchComponent } from './transaction-search/transaction-search.component';
-import { TransactionService } from './service/transaction.service';
-import { IncomeExpenseTransationDetailComponent } from './income-expense-monthly/income-expense-daily/income-expense-transation-detail/income-expense-transation-detail.component';
 
 const routes: Routes = [
   {
     path: '', component: IncomeExpenseComponent,
-    children: [
-      {
-        path: ':id',
-        component: IncomeExpenseTransationDetailComponent,
-        resolve: [TransactionService]
-      }
-    ]
+    // children: [
+    //   {
+    //     path: ':id',
+    //     component: IncomeExpenseTransationDetailComponent,
+    //     resolve: [TransactionService]
+    //   }
+    // ]
   },
   {
     path: 'revenue-analysis', component: RevenueAnalysisComponent

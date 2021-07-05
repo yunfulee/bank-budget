@@ -6,8 +6,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 const routes: Routes = [
   { path: '', component: DashboardComponent },
   {
-    path: 'income-expense', loadChildren: () => import('./income-expense/income-expense.module')
+    path: 'income-expense',
+    loadChildren: () => import('./income-expense/income-expense.module')
       .then(m => m.IncomeExpenseModule)
+  },
+  {
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module')
+      .then(m => m.AuthModule)
   },
   { path: '**', component: DashboardComponent }
 ];

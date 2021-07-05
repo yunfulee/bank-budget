@@ -6,7 +6,24 @@ export interface State {
 }
 
 const initialState: State = {
-  transactions: []
+  transactions: [{
+    "description": "this is for coffee",
+    "amount": "$12",
+    "type": "expense",
+
+  },
+  {
+    "description": "this is for salary",
+    "amount": "$1200",
+    "type": "income",
+
+  },
+  {
+    "description": "this is for book",
+    "amount": "$12",
+    "type": "expense",
+
+  }]
 }
 
 export function TransactionReducer(
